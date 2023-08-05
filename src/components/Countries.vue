@@ -94,7 +94,8 @@ export default {
       </div>
       <div class="m-8">
         <Transition>
-          <img :src="flag" :key="flag" class="border-2 border-gray-300 p-1 object-cover"
+          <img :src="flag" :key="flag" class="border-2 border-gray-300 p-1
+                                       object-contain"
         style="width:300px;height:200px"/>
         </Transition>
       </div>
