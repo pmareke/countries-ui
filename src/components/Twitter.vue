@@ -3,7 +3,7 @@ export default {
   name: "Twitter",
   props: ["hits", "seconds"],
   setup(props) {
-    return { title: `Countries Quiz is awesome!\nI got ${props.hits} correct countries in a ${props.seconds} seconds, can you beat me? #countries #quiz`}
+    return { title: `Countries Quiz is awesome!\nI got ${props.hits} correct countries in ${props.seconds} seconds, can you beat me? #countries #quiz`}
   }
 }
 </script>
