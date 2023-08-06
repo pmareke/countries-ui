@@ -44,6 +44,7 @@ export default {
       return {
         flag: null,
         countries: [],
+        country: null,
         answer: null,
         ok: false,
         hits: 0,
@@ -100,8 +101,7 @@ export default {
         </Transition>
       </div>
       <div class="flex flex-col items-center w-2/3">
-        <button class="w-full m-2 bg-transparent text-gray-700
-          font-semibold py-2 px-4 border border-gray-400 rounded" @click="solve" v-for="country in countries">
+        <button class="w-full m-2 bg-transparent text-gray-700 font-semibold py-2 px-4 border border-gray-400 rounded" @click="solve" v-for="country in countries">
           {{ country }}
         </button>
       </div>
@@ -116,7 +116,8 @@ export default {
         country">here</a>.</p>
       <div class="mt-8 flex flex-col">
         <Twitter class="mb-4" :hits="hits" :seconds="seconds" />
-        <button class="bg-green-500 text-white font-bold py-2 px-4 rounded" @click="play">Play again!</button>
+        <button class="bg-green-500 text-white font-bold py-2 px-4 rounded mb-4" @click="play">Play again!</button>
+        <a href="capitals.pmareke.com" class="bg-yellow-500 text-white font-bold py-2 px-4 rounded">Try Capitals Quiz!</a>
       </div>
     </div>
     <Footer />
