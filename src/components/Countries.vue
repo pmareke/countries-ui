@@ -110,7 +110,7 @@ export default {
       <p class="text text-xl mb-8">You got <b>{{hits}} hits</b> in <b>{{seconds}} seconds</b>!</p>
       <p class="text-2xl mb-4 p-2">Sorry, but the country was:</p>
       <p class="text-3xl font-bold mb-8">{{answer}}</p>
-      <p class="text-xl italic p-2">If you can want to know more about this
+      <p class="text-xl italic p-2">If you want to know more about this
          country, please click  <a
         class="font-bold" :href="'https://www.google.com/search?q=' +
         country">here</a>.</p>
