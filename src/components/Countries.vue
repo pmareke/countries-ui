@@ -107,9 +107,10 @@ export default {
       </div>
     </div>
     <div class="flex flex-col items-center" v-else>
-      <p class="text text-xl mb-8">You got <b>{{hits}} hits</b> in <b>{{seconds}} seconds</b>!</p>
+      <p class="text text-xl mb-4">You got <b>{{hits}} hits</b> in <b>{{seconds}} seconds</b>!</p>
       <p class="text-2xl mb-4 p-2">Sorry, but the country was:</p>
-      <p class="text-3xl font-bold mb-8">{{answer}}</p>
+      <p class="text-3xl font-bold mb-2">{{answer}}</p>
+      <img :src="flag" :key="flag" class="border-2 border-gray-300 p-1 object-contain mb-2" style="width:200px;height:100px"/>
       <p class="text-xl italic p-2">If you want to know more about this
          country, please click  <a
         class="font-bold" :href="'https://www.google.com/search?q=' +
