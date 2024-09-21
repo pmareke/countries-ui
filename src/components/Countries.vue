@@ -118,7 +118,7 @@ export default {
       <div class="mt-8 flex flex-col">
         <Twitter class="mb-4" :hits="hits" :seconds="seconds" />
         <button class="bg-green-500 text-white font-bold py-2 px-4 rounded mb-4" @click="play">Play again!</button>
-        <a href="https://www.capitals.pmareke.com" class="bg-yellow-500 text-white font-bold py-2 px-4 rounded">Try Capitals Quiz!</a>
+        <a href="https://capitals.pmareke.com" class="bg-yellow-500 text-white font-bold py-2 px-4 rounded">Try Capitals Quiz!</a>
       </div>
     </div>
     <Footer />
